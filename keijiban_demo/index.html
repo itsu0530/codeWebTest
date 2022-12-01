@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="keiji.css">
+    <title>掲示板</title>
+</head>
+<body>
+    <div>
+        <h1>○○掲示板</h1>
+    </div>
+    <div id="display">
+
+
+    </div>
+    <div id="input_form">
+        <h2>入力フォーム</h2>
+        <form name="my">
+        ニックネームを入力
+            <input name="name" value="" id="name" style="width: 200px;">
+        学生番号を入力
+            <input name="number" value="" id="num" style="width: 200px;">
+            
+            <span>
+                <input name="atribute" value="未所属" type="radio" checked>未所属
+                <input name="atribute" value="所属中" type="radio">所属中
+            </span>
+            <br>
+            <span>
+                <input name="info_type" type="radio" value="質問" checked>質問 
+                <input name="info_type" type="radio" value="紹介">紹介
+            </span>
+        内容
+            <textarea name="introduce" id="input" cols="30" rows="10" ></textarea>
+        
+        </form>  
+    <button id="send">投稿</button>
+    </div>
+    <script src="keiji.js"></script>
+</body>
+</html>
